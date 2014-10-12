@@ -1,6 +1,6 @@
 import sublime, sublime_plugin
  
-class etcdNewCommand(sublime_plugin.TextCommand):
+class ETCDNewCommand(sublime_plugin.TextCommand):
     def run(self, edit):
     	import urllib2
     	response = urllib2.urlopen('https://discovery.etcd.io/new')
